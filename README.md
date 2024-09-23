@@ -30,10 +30,9 @@ Blum is telegram web app mining on telegram
 - run `cp src/config/config_tmp.js src/config/config.js && cp src/config/proxy_list_tmp.js src/config/proxy_list.js`
 - To configure the app, run `nano src/config/config.js` and add your telegram app id and hash there (if you use telegram sessions)
 - To Configure Proxy, run `nano src/config/proxy_list.js` and fill up your proxy using provided format (it currently support only HTTPS proxy), if you don't use proxy then just let it blank [].
-  - ```
+   ```
    export const proxyList = [];
    ```
-   
 - run `npm run start`
 
 ## Setup Accounts
