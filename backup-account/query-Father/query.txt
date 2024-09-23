@@ -1,0 +1,1 @@
+query_id=AAHS87k_AwAAANLzuT9oifV8&user=%7B%22id%22%3A7511602130%2C%22first_name%22%3A%22Father%22%2C%22last_name%22%3A%22Z-03%22%2C%22username%22%3A%22zeraphi_03%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1726670113&hash=fb798af4c2df594953f7ecfb7aa72ae62a90f980d3eb2fae7cc57f385bd58eeb
