@@ -6,7 +6,7 @@ Blum is telegram web app mining on telegram
 
 - Node JS (v18)
 - Git
-- Blum [Link](https://t.me/blum/app?startapp=tribe_zeraphi_doppelganger-ref_PXrhOAj8MX)
+- Blum https://t.me/blum/app?startapp=ref_PXrhOAj8MX
 
 ## BOT Feature
 
@@ -18,7 +18,7 @@ Blum is telegram web app mining on telegram
 
 ## Register Blum Account
 
-- Register blum on telegram https://t.me/blum/app?startapp=tribe_zeraphi_doppelganger-ref_PXrhOAj8MX
+- Register blum on telegram https://t.me/blum/app?startapp=ref_PXrhOAj8MX
 - Start bot `/start`
 - Launch Blum
 
