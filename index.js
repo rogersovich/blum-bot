@@ -20,6 +20,9 @@ if (args.includes('--play')) {
     logger.info("Normal mode");
 }
 
+const MIN_PLAY = 50
+const STOP_PLAY = 25
+
 function getFullName(account) {
   const fullName = Helper.getAccountName(
     account.firstName,
@@ -29,7 +32,7 @@ function getFullName(account) {
   return fullName;
 }
 
-async function operation(acc, query, queryObj, proxy) {
+async function runGame(acc, query, queryObj, proxy) {
   logger.clear();
   try {
     const blum = new Blum(acc, query, queryObj, proxy);
@@ -69,8 +72,8 @@ async function operation(acc, query, queryObj, proxy) {
     let err = 0;
 
     //? Play when pass > 50
-    if(blum.balance.playPasses > 50){
-      while (blum.balance.playPasses > 25) {
+    if(blum.balance.playPasses > MIN_PLAY){
+      while (blum.balance.playPasses > STOP_PLAY) {
         await blum.play().catch(() => {
           err += 1;
         });
@@ -89,7 +92,7 @@ async function operation(acc, query, queryObj, proxy) {
       await Helper.delaySimple(
         1000,
         getFullName(blum.account),
-        `⚠️ Minimum Play Passes is : ${colors.yellow(`> 50`)}`,
+        `⚠️ Minimum Play Passes is : ${colors.yellow(`> ${MIN_PLAY}`)}`,
         "INFO"
       );
     }
@@ -100,7 +103,7 @@ async function operation(acc, query, queryObj, proxy) {
       `✅ Account Processing Complete, Delaying for 1 hour`,
       "INFO"
     );
-    await operation(acc, query, queryObj, proxy);
+    await runGame(acc, query, queryObj, proxy);
   } catch (error) {
     const fullName = Helper.getAccountName(acc.firstName, acc.lastName)
     await Helper.delaySimple(
@@ -108,7 +111,7 @@ async function operation(acc, query, queryObj, proxy) {
       fullName,
       `⚠️ ${error}, Retrying after 10 Second`
     );
-    await operation(acc, query, queryObj, proxy);
+    await runGame(acc, query, queryObj, proxy);
   }
 }
 
@@ -207,7 +210,7 @@ async function startBot(playMode) {
       }
 
       const promiseList = paramList.map(async (data) => {
-        await operation(data[0], data[1], data[2], data[3]);
+        await runGame(data[0], data[1], data[2], data[3]);
       });
 
       await Promise.all(promiseList);

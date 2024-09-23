@@ -40,20 +40,16 @@ export class Telegram {
       }
       ctx += "\n \nPlease Choose a menu: \n";
       ctx +=
-        "\n \n1. Create Account \n2. Reset Account \n3. Start Bot\n4. Query modification\n \nInput your choice :";
+        "\n \n1. Create Account \n2. Start Bot\n3. Query modification\n \nInput your choice :";
       const choice = await input.text(ctx);
       if (choice == 1) {
         await this.accountType();
       } else if (choice == 2) {
-        Helper.resetAccounts();
-        await Helper.delay(3000);
-        await this.onBoarding();
-      } else if (choice == 3) {
         if (Helper.getSession(this.accountName)?.length == 0) {
           console.info("You don't have any Accounts, please create first");
           await this.onBoarding();
         }
-      } else if (choice == 4) {
+      } else if (choice == 3) {
         await this.queryModificaiton();
       } else {
         console.error("Invalid input, Please try again");

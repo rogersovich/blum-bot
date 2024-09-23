@@ -1,25 +1,24 @@
 # BLUM BOT
 
-Blum ? Blum is telegram web app mining on telegram, and blum bot is blum auto mining and complete missions bot
+Blum is telegram web app mining on telegram
 
 ## Prerequisite
 
-- Node JS (v22.1.0)
+- Node JS (v18)
 - Git
-- Blum Account t.me/BlumCryptoBot/app
-- TELEGRAM_APP_ID & TELEGRAM_APP_HASH Get it from [Here](https://my.telegram.org/auth?to=apps)
+- Blum [Link](https://t.me/blum/app?startapp=tribe_zeraphi_doppelganger-ref_PXrhOAj8MX)
 
 ## BOT Feature
 
-- Auto Check In (Experimental)
-- Auto start and claim mining
-- Auto complete missions
-- Auto claim misisons reward
-- Auto play game
+- Auto Start and claim mining
+- Auto Check In
+- Auto Play game
+- Auto Complete missions
+- Auto Claim misisons reward
 
 ## Register Blum Account
 
-- Register blum on telegram https://t.me/BlumCryptoBot/app?startapp=ref_dvQqzUMseK
+- Register blum on telegram https://t.me/blum/app?startapp=tribe_zeraphi_doppelganger-ref_PXrhOAj8MX
 - Start bot `/start`
 - Launch Blum
 
@@ -41,17 +40,12 @@ export const proxyList = [];
 1. Run bot `npm run start`
 2. Choose option `1` to create account
 3. Choose account type `Query` or `Sessions`
-4. `Session` Type
-   1. Enter Account Name
-   2. Enter your phone number starting with countrycode ex : `+628xxxxxxxx`
-   3. You will be asked for verification code and password (if any)
-   4. Start The bot Again after account creation complete
-5. `Query` Type
+4. `Query` Type
    1. Enter Account Name
    2. Enter Telegram Query (you can get query by opening bot app on browser > inspect element > storage / application > session storage > telegram init params > copy tg web app data value)
    3. Start The bot Again after account creation complete
-6.  after bot started choose option 3 start bot
-7.  if something wrong with your Account, reset Account (option 2) first or just delete problematic a, to cancel running bot press `ctrl+c` twice, and start again [from No 1.](#setup-accounts).
+5.  after bot started choose option 3 start bot
+6.  if something wrong with your Account, reset Account (option 2) first or just delete problematic a, to cancel running bot press `ctrl+c` twice, and start again [from No 1.](#setup-accounts).
    
 
 ## Session Troubleshoot
