@@ -48,7 +48,8 @@ Blum is telegram web app mining on telegram
 6.  if something wrong with your Account, just delete problematic a, to cancel running bot press `ctrl+c` twice, and start again [from No 1.](#setup-accounts).
    
 ## Query Troubleshoot
-if your bot get eror, with some error code `401` it mean your query expired, go get new query and run bot again and choose option ` ` for query modification. 
+
+if your bot get eror, with some error code `401` it mean your query expired, go get new query and run bot again and choose option `3` for query modification. 
 
 ## How To Update
 
