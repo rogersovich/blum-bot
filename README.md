@@ -24,7 +24,7 @@ Blum is telegram web app mining on telegram
 
 ## Set Up And Run
 
-- clone the project `git clone https://github.com/Widiskel/blum-bot.git`
+- clone the project `git clone https://github.com/rogersovich/blum-bot.git`
 - run `cd blum-bot`.
 - run `npm install && mkdir -p accounts`.
 - run `cp src/config/config_tmp.js src/config/config.js && cp src/config/proxy_list_tmp.js src/config/proxy_list.js`
