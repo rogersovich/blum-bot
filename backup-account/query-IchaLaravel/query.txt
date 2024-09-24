@@ -1,1 +1,0 @@
-query_id=AAG87W04AwAAALztbThINgn7&user=%7B%22id%22%3A7389179324%2C%22first_name%22%3A%22Icha%20Laravel%22%2C%22last_name%22%3A%22Z-05%22%2C%22username%22%3A%22zeraphi_05%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1726669837&hash=8b8e9a97d4fb58ec3ffe0d9c9c34de3c062ac783e09b7d6ec811450540d99ef2

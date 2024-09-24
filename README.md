@@ -57,3 +57,11 @@ if your bot get eror, with some error code `401` it mean your query expired, go 
 - run `npm update`
 - read Setup and run again if any new step added
 - run the bot again `npm run start`
+
+## Support
+
+To support me please give me ⭐ in this github repository. Thank you semoga pada JP 🔥
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

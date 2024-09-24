@@ -1,1 +1,0 @@
-query_id=AAG51W0aAwAAALnVbRro5Psj&user=%7B%22id%22%3A6885856697%2C%22first_name%22%3A%22Mother%22%2C%22last_name%22%3A%22Z-02%22%2C%22username%22%3A%22zeraphi_02%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1726670153&hash=a6cab21e92cfcbc5057c267af4a31e1317a95b2d64be1d71dc84a916b471bf85

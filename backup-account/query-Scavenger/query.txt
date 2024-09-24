@@ -1,1 +1,0 @@
-query_id=AAEXW6wsAAAAABdbrCxz9TZA&user=%7B%22id%22%3A749493015%2C%22first_name%22%3A%22Scavenger%22%2C%22last_name%22%3A%22Z-00%22%2C%22username%22%3A%22dimessup%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1726670242&hash=5e014e17b243fd27918673265fd3e7f30160b7a63dc0a7568de053e811ed361a
