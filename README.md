@@ -2,6 +2,8 @@
 
 Blum is telegram web app mining on telegram
 
+![Blum Bot](./assets/blum-banner.jpg)
+
 ## Prerequisite
 
 - Node JS (v14)
