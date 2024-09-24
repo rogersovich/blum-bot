@@ -72,7 +72,7 @@ export class Blum extends API {
         );
       }
       await this.fetch(
-        "https://gateway.blum.codes/v1/user/me",
+        "https://user-domain.blum.codes/api/v1/user/me",
         "GET",
         this.token
       )
@@ -95,8 +95,10 @@ export class Blum extends API {
           "INFO"
         );
       }
+
+      const url_balance = 'https://game-domain.blum.codes/api/v1/user/balance'
       await this.fetch(
-        "https://game-domain.blum.codes/api/v1/user/balance",
+        url_balance,
         "GET",
         this.token
       )
