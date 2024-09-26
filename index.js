@@ -37,6 +37,8 @@ async function runGame(acc, query, queryObj, proxy) {
   try {
     const blum = new Blum(acc, query, queryObj, proxy);
 
+    const isMaintained = false
+
     await blum.login();
     await blum.getUser(true);
     await blum.getBalance(true);
@@ -52,21 +54,23 @@ async function runGame(acc, query, queryObj, proxy) {
     await blum.mining();
 
     //* Task
-    await doingTasks(blum);
-
-    await Helper.delaySimple(
-      3000,
-      getFullName(blum.account),
-      `🔃 Re-getting tasks for verification`,
-      "INFO"
-    );
-
-    await blum.getTasks();
-
-    const verifyTasks = blum.tasks.filter((item) => item.status === "READY_FOR_VERIFY");
-
-    if(verifyTasks.length > 0){
+    if(!isMaintained){
       await doingTasks(blum);
+  
+      await Helper.delaySimple(
+        3000,
+        getFullName(blum.account),
+        `🔃 Re-getting tasks for verification`,
+        "INFO"
+      );
+  
+      await blum.getTasks();
+  
+      const verifyTasks = blum.tasks.filter((item) => item.status === "READY_FOR_VERIFY");
+  
+      if(verifyTasks.length > 0){
+        await doingTasks(blum);
+      }
     }
 
     let err = 0;
