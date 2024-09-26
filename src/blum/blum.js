@@ -139,7 +139,13 @@ export class Blum extends API {
 
           resolve();
         })
-        .catch((err) => {
+        .catch(async (err) => {
+          await Helper.delaySimple(
+            1000,
+            this.getFullName(),
+            `🌿 Error Play: ${colors.red(err)}`,
+            "INFO"
+          );
           reject(err);
         });
     });
@@ -422,6 +428,7 @@ export class Blum extends API {
           resolve();
         })
         .catch((err) => {
+          
           reject(err);
         });
     });

@@ -20,8 +20,8 @@ if (args.includes('--play')) {
     logger.info("Normal mode");
 }
 
-const MIN_PLAY = 50
-const STOP_PLAY = 25
+const MIN_PLAY = 24
+const STOP_PLAY = 0
 
 function getFullName(account) {
   const fullName = Helper.getAccountName(
@@ -85,7 +85,7 @@ async function runGame(acc, query, queryObj, proxy) {
           await Helper.delaySimple(
             3000,
             getFullName(blum.account),
-            `⚠️ Failed to play game something wen't wrong`,
+            `⚠️ ${colors.red("Failed to play game something wen't wrong")}`,
             "INFO"
           );
           logger.error(err);
