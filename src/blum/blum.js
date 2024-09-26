@@ -414,9 +414,9 @@ export class Blum extends API {
             "INFO"
           );
           await Helper.delaySimple(
-            30000,
+            45000,
             this.getFullName(),
-            `🎲 Game ID, Playing for ${colors.green('30 Second')}`,
+            `🎲 Game ID, Playing for ${colors.green('45 Second')}`,
             "INFO"
           );
 
@@ -427,8 +427,13 @@ export class Blum extends API {
 
           resolve();
         })
-        .catch((err) => {
-          
+        .catch(async(err) => {
+          await Helper.delaySimple(
+            1000,
+            this.getFullName(),
+            `🎲 ${colors.red(`Error Play Game: ${err?.message}`)}`,
+            "INFO"
+          );
           reject(err);
         });
     });
