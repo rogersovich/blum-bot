@@ -20,8 +20,8 @@ if (args.includes('--play')) {
     logger.info("Normal mode");
 }
 
-const MIN_PLAY = 24
-const STOP_PLAY = 0
+const MIN_PLAY = 15
+const STOP_PLAY = 5
 
 function getFullName(account) {
   const fullName = Helper.getAccountName(
