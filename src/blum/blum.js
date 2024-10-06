@@ -1,7 +1,6 @@
 import { API } from "../api/api.js";
 import { Helper } from "../utils/helper.js";
 import colors from "colors";
-import axios from "axios";
 
 export class Blum extends API {
   constructor(acc, query, queryObj, proxy) {
@@ -126,7 +125,7 @@ export class Blum extends API {
             await Helper.delaySimple(
               2000,
               this.getFullName(),
-              `🎲 Play Pass: ${colors.green(playPasses)}`,
+              `🎲 Play Pass: ${colors.blue(playPasses)}`,
               "INFO"
             );
             await Helper.delaySimple(
